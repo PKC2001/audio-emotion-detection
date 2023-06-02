@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/audio-emotion-detection/static/css/main.1cdb753e.css",
+    "main.js": "/audio-emotion-detection/static/js/main.3800f8b9.js",
+    "index.html": "/audio-emotion-detection/index.html",
+    "main.1cdb753e.css.map": "/audio-emotion-detection/static/css/main.1cdb753e.css.map",
+    "main.3800f8b9.js.map": "/audio-emotion-detection/static/js/main.3800f8b9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1cdb753e.css",
+    "static/js/main.3800f8b9.js"
+  ]
+}
