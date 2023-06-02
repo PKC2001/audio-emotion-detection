@@ -9,7 +9,6 @@ const { selectedValue, setSelectedValue } = useContext(Context);
 
   const handleCheckboxChange = (event) => {
     setSelectedValue(event.target.value)
-    console.log(selectedValue)
   };
 
   return (

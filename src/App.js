@@ -15,9 +15,8 @@ function App() {
   const handleSubmit = (e) => {
     e.preventDefault();
     setObjectData({ ...objectData, emotion: selectedValue, audio, comment });
-    alert("Downloading.....");
+    alert("Click OK to Start Downloading...");
     convertToExcel();
-    console.log(objectData)
   };
 
   const convertToExcel = () => {
