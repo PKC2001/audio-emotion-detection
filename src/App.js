@@ -15,8 +15,7 @@ function App() {
   const handleSubmit = (e) => {
     e.preventDefault();
     setObjectData({ ...objectData, emotion: selectedValue, audio, comment });
-    alert("Click OK to Start Downloading...");
-    convertToExcel();
+    alert("Click on Download button....");
   };
 
   const convertToExcel = () => {
@@ -29,8 +28,6 @@ function App() {
     saveAs(blob, "data.xlsx");
   };
   
-
-  console.log(objectData);
 
   return (
     <div className="bg-yellow-200 justify-center h-screen">
@@ -55,12 +52,15 @@ function App() {
           </div>
           <div className="flex justify-center pt-10 align-middle space-x-5">
             <Comment />
-            <div>
+            <div className="space-x-7">
               <button
                 className="border border-gray-200 bg-yellow-100 rounded-lg text-lg font-semibold cursor-pointer"
                 type="submit"
               >
                 Save & Check
+              </button>
+              <button onClick={convertToExcel} className="border border-gray-200 bg-yellow-100 rounded-lg text-lg font-semibold cursor-pointer" >
+                Download
               </button>
             </div>
           </div>
